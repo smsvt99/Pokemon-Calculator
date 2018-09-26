@@ -58,7 +58,7 @@ function getHPIV() {
         document.getElementById('orange').innerText
 
     document.getElementById('binaryResults').innerHTML =
-        '<span id="red2">' +
+        '<div id="centerMe"><span id="red2">' +
         document.getElementById('red').innerText +
         '</span><span id="blue2">' +
         document.getElementById('blue').innerText +
@@ -68,7 +68,9 @@ function getHPIV() {
         document.getElementById('orange').innerText +
         '</span>' +
         ' = ' +
-        parseInt(theNumber, 2)
+        parseInt(theNumber, 2) + 
+        '</div><br/><p class="info">' +
+        "Do you see how the colored bits line up to form a new binary number? Consider the ramifications of this mechanic. From the point of view of the HP IV, we always want odd numbers for the four random IVs, as these end in 1 in binary. 14, 14, 14, 14 would seem to be an impressive roll for a Pokemon's IVs, but it yields a 0 (i.e. 0000) for the HP IV. Similarly, the Attack IV has the most weight in determining the HP IV. An odd Attack IV adds 8 to the HP IV, an odd Defence IV adds 4, an odd Speed IV adds 2, and an odd Special IV adds 1.</p>"
 
     colorDigits();
 }
