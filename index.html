@@ -1,6 +1,10 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pok&eacute;mon Calculator</title>
     <style>
         .container {
             display: flex;
@@ -67,9 +71,9 @@
     <div class="container">
         <ul>
             <div class="pokebox">
-                <h1>Attacking Pokemon</h1>
+                <h1>Attacking Pok&eacute;mon</h1>
                 <h3>Base Stats</h3>
-                <p>Pokemon:</p>
+                <p>Pok&eacute;mon:</p>
                 <select id="pokemonSelect">
                     <option class="nameOption">Bulbasaur</option>
                     <option class="nameOption">Charmander</option>
@@ -110,10 +114,10 @@
             </div>
         </ul>
         <div>
-            <h1>Pokemon Calculator Tool</h1>
-            <p id="info1" class="info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Did you ever wonder how the math works in the original pokemon games? Where do
+            <h1>Pok&eacute;mon Calculator Tool</h1>
+            <p id="info1" class="info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Did you ever wonder how the math works in the original Pok&eacute;mon games? Where do
                 the numbers come from? Let us explore this question. The answer involves a lot of moving parts and sophisticated
-                calculations. Our first step will be to select a pokemon from the list on the left. Selecting a pokemon name
+                calculations. Our first step will be to select a Pok&eacute;mon from the list on the left. Selecting a Pok&eacute;mon name
                 will fill in its base stats below. Although every Bulbasaur has the same base stats, as we will see in the
                 next section, every Bulbasaur is not made equal!
                 <br/>
@@ -132,7 +136,7 @@
     <div class="container" id="two">
         <ul>
             <div class="pokebox">
-                <h1>Attacking Pokemon</h1>
+                <h1>Attacking Pok&eacute;mon</h1>
                 <h3>Indidual Values</h3>
                 <!-- <p>Pokemon:</p>
                     <select id="pokemonSelect">
@@ -176,11 +180,11 @@
         </ul>
         <div>
             <h1>Individual Values</h1>
-            <p id="info2" class="info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In addition to the Base Stats, each individual pokemon also has Individual Values,
+            <p id="info2" class="info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In addition to the Base Stats, each individual Pok&eacute;mon also has Individual Values,
                 or IVs, which make it unique. The four IVs (one for Attack, Defence, Speed, and Special) are random integers
                 ranging from 0 to 15 (i.e. 0000 - 1111). From these, a fifth IV for HP is calculated, and finally, the actual
                 stats are calculated using complicated formulae. We will see this later. For now, click the button to get
-                random IVs for your pokemon. You make click as many times as you like, but your chance of a perfect 15 for
+                random IVs for your Pok&eacute;mon. You make click as many times as you like, but your chance of a perfect 15 for
                 all four IVs is 0.00001525878%. Good luck!
                 <br/>
                 <br/>
@@ -197,7 +201,7 @@
     <div class="container" id="three">
 
         <div class="pokebox">
-            <h1>Attacking Pokemon</h1>
+            <h1>Attacking Pok&eacute;mon</h1>
             <h3>HP IV</h3>
             <hr>
             <table>
@@ -229,7 +233,7 @@
             <p id="info3" class="info">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As stated before, the Individual Value for HP is calculated from the other four
                 random IVs, and it is done so in a rather interesting way. To your left you see the four IVs which were generated
                 in the last section. They are represented in their usual decimal form as well as in binary. The developers
-                of Pokemon chose to use the least significant bits (i.e. the rightmost digits) of these binary numbers to make the Individial Value for a Pokemon's HP. They are simply arranged in this order to create a new binary number. Click 'Calcuate' to see how it works.  
+                of Pok&eacute;mon chose to use the least significant bits (i.e. the rightmost digits) of these binary numbers to make the Individial Value for a Pok&eacute;mon's HP. They are simply arranged in this order to create a new binary number. Click 'Calcuate' to see how it works.  
                 <br/>
                 <h3 id ="binaryResults"></h3>
                 <br/>
@@ -486,7 +490,7 @@
         }
 
     </script>
-    </script>
+
 </body>
 
 </html>
