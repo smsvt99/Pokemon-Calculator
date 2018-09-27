@@ -72,3 +72,18 @@ table tr td {
 .red {
     color: red;
 }
+#pokePic {
+    position: sticky;
+    top: 50%;
+    left: 30%;
+    background: url('sprites.png');
+    height: 79px;
+    width: 79px;
+    /* background-position: -75px 0px */
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}

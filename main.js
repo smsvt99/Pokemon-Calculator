@@ -1,5 +1,6 @@
 let pokemon = {
     name: '',
+    number: '',
     type: [],
     level: '',
     base: {
@@ -91,9 +92,10 @@ function fillBaseStats(array) {
     pokemon.base.speed = array[3]
     pokemon.base.special = array[4]
     pokemon.type.push(array[5])
-    if (array[6]) {
-        pokemon.type.push(array[6])
-    }
+    pokemon.type.push(array[6])
+    pokemon.number = array[7]
+    
+    positionImage(array[7])
 
     document.getElementById('attackerHP').value = array[0]
     document.getElementById('attackerAttack').value = array[1]
@@ -108,6 +110,29 @@ function fillBaseStats(array) {
     document.getElementById('attackerDefence2').textContent = array[2]
     document.getElementById('attackerSpeed2').textContent = array[3]
     document.getElementById('attackerSpecial2').textContent = array[4]
+}
+
+function positionImage(pokeNum) {
+    if (pokeNum <= 28) {
+        x = (pokeNum - 1) * -80;
+        y = 0;
+    } else if (pokeNum <= 56){
+        x = (pokeNum - 1) * -80;
+        y = -80;
+    } else if (pokeNum <= 84){
+        x = (pokeNum - 1) * -80;
+        y = -160;
+    } else if (pokeNum <=112){
+        x = (pokeNum - 1) * -80;
+        y = -240;
+    } else if (pokeNum <= 140){
+        x = (pokeNum - 1) * -80;
+        y = -320;
+    } else {
+        x = (pokeNum - 1) * -80;
+        y = -400;    
+    }
+    document.getElementById('pokePic').style.backgroundPosition = `${x}px ${y}px`;
 }
 
 function getIVs() {
