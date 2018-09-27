@@ -119,7 +119,7 @@ function getIVs() {
 
     document.getElementById('attackerAttackIV').value = pokemon.IV.attack;
     document.getElementById('attackerDefenceIV').value = pokemon.IV.defence;
-    document.getElementById('attackerSpeedIV').value = pokemon.IV.defence;
+    document.getElementById('attackerSpeedIV').value = pokemon.IV.speed;
     document.getElementById('attackerSpecialIV').value = pokemon.IV.special;
 
     document.getElementById('attackerAttackIV2').textContent = pokemon.IV.attack;
