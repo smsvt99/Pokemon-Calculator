@@ -74,6 +74,14 @@ window.onload = function () {
     fillBaseStats(pokemonStats['bulbasaur']);
 };
 
+const pokemonNames = Object.keys(pokemonStats);
+
+pokemonNames.forEach(name => {
+    let pokemon = name.charAt(0).toUpperCase() + name.slice(1);
+    let option = `<option class="nameOption">${pokemon}</option>`;
+    document.getElementById('pokemonSelect').innerHTML += option;
+});
+
 document.getElementById('pokemonSelect').addEventListener('change', whichPokemon);
 document.getElementById('level').addEventListener('change', generateStats);
 
