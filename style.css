@@ -20,11 +20,11 @@ input {
 
 .info {
     /* max-width: 50%; */
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
     font-size: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 
 }
 
@@ -66,6 +66,24 @@ table tr td {
     margin: 0;
     font-size: 30px;
 }
-#centerMe {
+.centerMe {
     text-align: center;
+}
+.red {
+    color: red;
+}
+#pokePic {
+    position: sticky;
+    top: 50%;
+    left: 30%;
+    background: url('sprites.png');
+    height: 79px;
+    width: 79px;
+    /* background-position: -75px 0px */
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
 }
